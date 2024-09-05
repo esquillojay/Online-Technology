@@ -1,0 +1,147 @@
+*, *::before, *::after {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+.clearfix::after,
+.clearfix::before {
+
+	content: "";
+	display: block;
+	clear: both;
+
+}
+
+body {
+
+	/* font-size: 62.5%; */
+	font-size: 100%;
+	line-height: 1.5;
+	font-family: 'Arial','sans-serif','sans';
+	
+}
+
+#wrapper {
+
+	margin: 0 auto;
+	padding:  30px;
+}
+
+form {
+
+	display: inline-block;
+	margin-bottom: 30px;
+	min-width: 510px;
+
+}
+
+form div {
+
+	margin-bottom: 12px;
+	display: grid;
+	grid-template-columns: 100px 1fr;
+
+}
+
+form div.buttons {
+
+	margin-bottom: 12px;
+	grid-template-columns: 100px 75px 1fr;
+
+}
+
+fieldset {
+
+	padding: 15px;
+
+}
+
+legend {
+
+	display: inline-block;
+	padding: 10px;
+
+}
+
+input[type="text"],
+select {
+
+	padding: 3px 5px;
+	width: 100%;
+
+}
+
+input + span {
+
+	margin: 0 0.5rem;
+
+}
+
+
+input[type="submit"], input[type="button"] {
+
+	padding: 3px 5px;
+	justify-self: start;
+
+}
+
+table {
+
+	border-collapse: collapse;
+	margin-top: 30px;
+	width: 100%;
+
+}
+
+td, th {
+
+	border:  1px solid black;
+	padding: 4px 8px;
+
+}
+
+.mt-1 {
+
+	margin-top: 1.5rem;
+
+}
+
+.d-block {
+
+	display: block;
+
+}
+
+button {
+
+	padding: 3px 5px;
+
+}
+
+#tooltip {
+
+	position: absolute;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 5px;
+	display: none;
+	z-index: 1000;
+	width: 200px; /* Set width, adjust as needed */
+	height: 200px; /* Set height, adjust as needed */
+	overflow: hidden;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+#tooltip img {
+
+	max-width: 200px;  /* Maximum width of the image in the tooltip */
+  max-height: 200px; /* Maximum height of the image in the tooltip */
+  width: auto;       /* Width adjusts to maintain aspect ratio */
+  height: auto;      /* Height adjusts to maintain aspect ratio */
+  object-fit: contain; /* Ensures the image is scaled properly width */
+
+}
