@@ -1,0 +1,5 @@
+0. You need to install a XAMMP Package: https://www.apachefriends.org/
+1. You need to place the template inside xammp's htdocs folder
+2. Refer to studentdb.sql for the database and table structure
+3. Refer to this link for the snippet of codes:
+https://github.com/renatomaaliw3/public_files/tree/43833c7218ef91548b2560ebb2d21e682fd0759d/Online%20Technologies/13.%20Backend%20(Pure%20PHP)/01.%20simple_crud
